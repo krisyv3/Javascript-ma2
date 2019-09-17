@@ -4,8 +4,15 @@
 
 //2. Create an array of numbers from 1 - 10; slice the 5th number in the array
 
+var myarray = [1,2,3,4,5,6,7,8,9,10];
+var newarray = myarray.splice(4, 1);
+console.log(myarray);
+console.log(newarray);
 
 //3. Delete the last number in the array that you created above.
+
+myarray.pop();
+console.log(myarray);
 
 
 //4. Given the following paragraph, create a JavaScript function that changes all mentions of strawberry to banana and strawberries to bananas: 
