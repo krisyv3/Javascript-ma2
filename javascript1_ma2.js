@@ -24,7 +24,7 @@ var myObject = {
     strawberry:"banana",
     Strawberry:"Banana"
 };
-str = mystr.replace(/Strawberries|strawberries|strawberry|Strawberry/gi, function(matched){
+str = mystr.replace(/Strawberries|strawberries|strawberry|Strawberry/g, function(matched){
     return myObject[matched];
 })
 console.log(str);
