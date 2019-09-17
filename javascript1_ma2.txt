@@ -6,7 +6,10 @@
 
 3. What does the return statement do?
 
-4. What will be written to the console from this function:
+4. What will be written to the console from this function: 
+
+// "inside my function" is going to be logget to the console.//
+
 		function myFunction(){
 			  return console.log('inside my function');
 			  console.log('My name is Andy');
