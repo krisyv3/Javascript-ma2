@@ -1,6 +1,21 @@
 //MODULE ASSIGNMENT 2 - LEVEL 1
 //1. Create a function that displays prototypal inheritance
 
+function person(first, last, age, gender, interests) {
+    this.name = {
+      first,
+      last
+    };
+    this.age = age;
+    this.gender = gender;
+    this.interests = interests;
+  };
+
+  function Teacher(first, last, age, gender, interests) {
+      person.call(this, first, last, age, gender, interests, greeting);
+
+      this.greeting = greeting;
+  }
 
 //2. Create an array of numbers from 1 - 10; slice the 5th number in the array
 
@@ -31,6 +46,20 @@ console.log(str);
 
 
 //5. Create an array and a button. The array should contain 4 football clubs names. When the button is clicked, remove all elements out of the array that we just created. There after add in 4 names of cars inside that array. Log it to the console.
+
+
+function ChangeArray() {
+   var football = ["liverpool" , "Manchester", "Brann", "fredrikstad FK"]; 
+   console.log(football);
+
+   football = [];
+   console.log(football);
+
+   var football = ["porsche", "suzuki", "Bmw", "Ford"];
+   console.log(football);
+}
+
+
 
 
 //6. Create an array of objects with 3 people inside it. Use the filter function to map by a name.
