@@ -1,14 +1,25 @@
+My answers have "//" behind them!
+
 //MODULE ASSIGNMENT 2 - LEVEL 1
 
 1. What is a function literal?
 
+// Just an expression for a function without a name.
+
 2. What is the constructor?
+
+// it's used in OOP language to create and object with or without values, mainly for working with prototype.
 
 3. What does the return statement do?
 
+// the return statement stops the execution and returns a value defined by the developer.
+
 4. What will be written to the console from this function: 
 
-// "inside my function" is going to be logget to the console.//
+
+// "inside my function" is going to be logget to the console, because the "return" statement breaks the function loop and wont process the rest of the function.
+
+
 
 		function myFunction(){
 			  return console.log('inside my function');
@@ -18,3 +29,20 @@
 
 
 5. Briefly describe scope in JavaScript.
+
+// scope is basically a description for where we can use the spesific variable, either outside or inside a function.
+
+// Outside the function is called a global scope and is generally not prefered because it can interact badly with other programs or integrations.
+// Inside a function is called a local scope and is the prefered way because it's "protected" from other programs and integrations.
+// Global variables when needed should be in an object Eksample: 
+
+//	var Myvariables = {
+//  	App: "a value here",
+//		Variable: "a value here",
+//		Variable: "a value here",
+//		Variable: "a value here"
+//	}
+
+// And should be called with : Myvariables.App ( for eksample )
+
+// This will greatly reduce the interaction from other places and maintain the protective state.
