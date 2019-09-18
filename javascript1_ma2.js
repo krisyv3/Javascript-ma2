@@ -64,6 +64,20 @@ function ChangeArray() {
 
 //6. Create an array of objects with 3 people inside it. Use the filter function to map by a name.
 
+var myPeople = [
+    {name: "bob", age: 32},
+    {name: "Jean", age: 43},
+    {name: "marley", age: 52}
+];
 
+
+var myPeopleFiltered =  myPeople.filter(function(human) {
+    return human.name == "bob";
+});
 //7. Create a simple function that logs the date.
 
+function mydate() {
+    var today = new Date();
+    var date = today.getDate();
+    console.log(date);
+}
